@@ -41,7 +41,7 @@ for i in range(30):
     
     filter = signal.gaussian(99, std=6) #Gaussian Window
     filter=filter/sum(filter)
-    
+    #Can use the Otsu Binarization
     hist,bins = np.histogram(GC.ravel(),256,[0,256])#Histogram of preprocessed green channel
     histr,binsr = np.histogram(RC.ravel(),256,[0,256])#Histogram of preprocessed red channel
     
