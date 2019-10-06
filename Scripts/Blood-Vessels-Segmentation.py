@@ -23,6 +23,8 @@ for i in range(10):
     cv2.imwrite('closing.jpg',closing)
 
     #OR
+    #The imapainting Procedure can be followed in order to extract the neccessary part
+    
     plt.imshow(cl1)
     plt.show()
     median=cv2.medianBlur(cl1,5)
