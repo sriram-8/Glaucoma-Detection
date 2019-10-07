@@ -13,6 +13,7 @@ import os
 #kernel=np.ones([[1,1,1],[1,1,1],[1,1,1]])*1/9
 kernel=np.ones((15,15),np.uint8)
 Data= os.listdir('C:\\Users\\DELL\\Desktop\\Glaucoma-Detection\\New')
+    #Also histogram analysis can be provided to show the bimodal images
 for i in range(10):
     img = cv2.imread('C:\\Users\\DELL\\Desktop\\Glaucoma-Detection\\New' + "/" + Data[i],0)
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(16,16))
